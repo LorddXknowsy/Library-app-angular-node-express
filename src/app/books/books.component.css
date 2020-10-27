@@ -1,0 +1,15 @@
+mat-accordion {
+  color: beige;
+
+  position: relative;
+  top: 20px;
+}
+
+h2 {
+  padding-bottom: 10px;
+  padding-left: 20px;
+  lighting-color: silver;
+}
+mat-expansion-panel-header {
+  height: 50px;
+}

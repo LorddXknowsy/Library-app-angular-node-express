@@ -1,0 +1,21 @@
+
+<!-- Using mat-accordion and structural directive *ngFor for iteration the property of each book-->
+<mat-accordion><h2>the books</h2>
+  <hr>
+  <mat-expansion-panel *ngFor="let book of books">
+
+    <mat-expansion-panel-header>
+        {{book.title}}
+    </mat-expansion-panel-header>
+    <mat-panel-description>
+    <h6> Book's description </h6>
+    </mat-panel-description>
+    <p>Genre: {{book.genre}} </p>
+      <p> Author: {{book.author}} </p>
+
+      <!-- Added buttons not is 'in-use' yet -->
+      <button mat-button color="primary"><mat-icon>edit</mat-icon></button>
+      <button mat-button color="warn"><mat-icon>delete</mat-icon></button>
+  </mat-expansion-panel>
+</mat-accordion>
+

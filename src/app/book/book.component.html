@@ -1,0 +1,37 @@
+<!-- Adding new book's form using Angular material and Template driving form -->
+<mat-card>
+  <h2>Add New Book</h2>
+  <form (submit)="onAddBook(bookForm)" #bookForm="ngForm">
+    <mat-form-field>
+      <textarea  matInput type="text"
+      name="title"
+      placeholder="Title"
+      ngModel
+      required
+      minlength="2"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput rows="text"
+      name="author"
+      placeholder="Author"
+      ngModel
+      required
+      minlength="2"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput rows="text"
+      name="genre"
+      placeholder="Genre"
+      ngModel
+      required
+      minlength="2"></textarea>
+    </mat-form-field>
+
+<!-- Submitting button created using mat-raised-button Module-->
+
+    <button
+      mat-raised-button
+      color="accent"
+      type="submit">Save Book</button>
+  </form>
+</mat-card>
